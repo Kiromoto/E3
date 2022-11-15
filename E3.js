@@ -34,35 +34,54 @@
 // и выводит простое число или нет. Если введено больше 1 000, то выводится сообщение, что данные неверны.
 // Обратите внимание на числа 0 и 1.
 
-let primeNumber = prompt('Введите число от 2 до 1000: ');
-
-function findPrimeNumber(n) {
-    i = n - 1
-    while (i > 2) {
-        if (n % i === 0) {break;}
-        else {i--}
-        }
-    if (i > 2) {return `${n} не является простым числом!`;}
-    else {return `${n} является простым числом!`;}
-}
-
-
-if (primeNumber.isFinite) {
-    if (primeNumber === 0 || primeNumber === 1) {
-        console.log(`${primeNumber} не является простым числом!`)
-    }
-    else if (primeNumber > 1000) {
-        console.log('Данные не верны. Вы ввели число больше 1000.')
-    }
-    else {
-        console.log(findPrimeNumber(primeNumber))
-    };
-}
+// let primeNumber = 17;
+//
+// function findPrimeNumber(n) {
+//     i = n - 1
+//     while (i > 1) {
+//         if (n % i === 0) {
+//             break;
+//         } else {
+//             i--
+//         }
+//     }
+//     if (i > 1) {
+//         return `${n} не является простым числом!`;
+//     } else {
+//         return `${n} является простым числом!`;
+//     }
+// }
+//
+//
+// if (isFinite(primeNumber)) {
+//     if (primeNumber === 0 || primeNumber === 1) {
+//         console.log(`${primeNumber} не является простым числом!`)
+//     } else if (primeNumber > 1000) {
+//         console.log('Данные не верны. Вы ввели число больше 1000.')
+//     } else if (primeNumber === 2) {
+//         console.log(`${primeNumber} является простым числом!`)
+//     } else if (primeNumber > 3 && primeNumber < 1000) {
+//         console.log(findPrimeNumber(primeNumber).toString())
+//     } else {
+//         console.log('Данные не верны. Вы ввели не верное число.')
+//     }
+// } else {
+//     console.log('Данные не верны. Вы ввели не число.')
+// }
 
 
 // Задание 3.
 // Написать функцию, которая принимает число как аргумент и возвращает функцию, которая также принимает число как аргумент
 // и возвращает сумму этих двух чисел. Выведите в консоль результат.
+//
+// function fr(a) {
+//     return function (b) {
+//         return `${a + b}`
+//     }
+// }
+//
+// sec = fr(4);
+// console.log(sec(86))
 
 
 // Задание 4.
