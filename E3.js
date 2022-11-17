@@ -89,6 +89,19 @@
 // заканчивая вторым. Используйте setInterval.
 // Например, пользователь ввёл числа 5 и 15. Каждую секунду в консоль должно печататься число, начиная с 5 и
 // заканчивая 15 (всего 11 чисел: 5 6 7 8 9 10 11 12 13 14 15).
+function printInterval(start, end) {
+    while (start <= end) {
+        setInterval(function (a) {
+            b = a;
+        }, 10000, 1);
+        console.log(start);
+        start++;
+    }
+}
+
+
+printInterval(5, 15)
+
 
 
 // Задание 5.
